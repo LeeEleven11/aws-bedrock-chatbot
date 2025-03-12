@@ -5,7 +5,7 @@ build:
     build:
       - pip install -r requirements.txt
 run:
-  runtime-version: 3.11
+  runtime-version: 3.10
   command: streamlit run chatbot.py
   network:
     port: 8501
