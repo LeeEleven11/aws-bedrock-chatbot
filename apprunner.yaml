@@ -1,0 +1,15 @@
+version: 1.0
+runtime: python3
+build:
+  commands:
+    build:
+      - pip install -r requirements.txt
+run:
+  runtime-version: 3.11
+  command: streamlit run chatbot.py
+  network:
+    port: 8501
+    env: APP_RUNNER
+  env:
+    - name: AWS_REGION
+      value: us-east-1
